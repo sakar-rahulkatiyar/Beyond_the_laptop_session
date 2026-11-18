@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in the demos or guides doesn't work as described.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please check the [troubleshooting guide](https://github.com/sakar-rahulkatiyar/Beyond_the_laptop_session/blob/main/docs/troubleshooting.md) first.
+
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part?
+      options:
+        - demos/led.py
+        - demos/button.py
+        - demos/sensor.py
+        - demos/web.py
+        - scripts/hello.sh
+        - Documentation
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead? Paste any error message in full.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Wire the circuit as in docs/wiring.md
+        2. Run python3 demos/...
+        3. See ...
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Raspberry Pi model and OS
+      placeholder: Raspberry Pi 4 Model B, Raspberry Pi OS 64-bit (Bookworm)
+
+  - type: input
+    id: versions
+    attributes:
+      label: Python and gpiozero versions
+      description: "Run: python3 --version && python3 -c \"import importlib.metadata as m; print(m.version('gpiozero'))\""

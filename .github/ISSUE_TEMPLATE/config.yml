@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Troubleshooting guide
+    url: https://github.com/sakar-rahulkatiyar/Beyond_the_laptop_session/blob/main/docs/troubleshooting.md
+    about: Fixes for the most common problems with the demos.
