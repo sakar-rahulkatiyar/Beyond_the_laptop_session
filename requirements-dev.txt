@@ -1,0 +1,8 @@
+# Development tools: tests, linting, type checks and git hooks.
+# Pinned so every machine and CI run uses the same versions; Dependabot updates them.
+-r requirements.txt
+mypy==2.4.1
+pre-commit==4.7.0
+pytest==9.2.0
+ruff==0.17.5
+shellcheck-py==0.11.0.1

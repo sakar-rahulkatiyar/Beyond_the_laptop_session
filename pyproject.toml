@@ -1,0 +1,47 @@
+# Tool configuration for linting, type checking and tests.
+#
+# The demos are standalone scripts, so this file does not define an installable
+# package. Dependencies live in requirements.txt and requirements-dev.txt.
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # import sorting
+  "B",   # flake8-bugbear
+  "UP",  # pyupgrade
+  "SIM", # flake8-simplify
+  "S",   # flake8-bandit (security)
+  "N",   # pep8-naming
+  "D",   # pydocstyle
+  "RUF", # ruff-specific rules
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+# pytest relies on assert, and test names already say what they check.
+"tests/**" = ["S101", "D"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.11"
+files = ["demos", "tests"]
+strict = true
+# gpiozero ships without type hints.
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = ["-ra", "--strict-markers", "--strict-config"]
+xfail_strict = true

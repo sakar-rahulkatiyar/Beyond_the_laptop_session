@@ -1,0 +1,6 @@
+# Normalise line endings: the code runs on Linux, and shell scripts break with CRLF.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.pdf binary
