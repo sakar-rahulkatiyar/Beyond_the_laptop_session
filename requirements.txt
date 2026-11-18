@@ -3,5 +3,5 @@
 # On Raspberry Pi OS, install the system packages instead of using pip:
 #   sudo apt install python3-gpiozero python3-flask
 # Use this file inside a virtual environment, for example on a laptop.
-gpiozero>=2.0.1.post3,<3
-flask>=2.2,<4
+gpiozero>=2.0,<3
+flask>=3.1.3,<4
