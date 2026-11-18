@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="700" viewBox="0 0 960 700" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-labelledby="title desc">
+<title id="title">Wiring for the Beyond the Laptop demos</title>
+<desc id="desc">An LED with a 330 ohm resistor on GPIO17 (pin 11) and ground (pin 9); a push button on GPIO2 (pin 3) and ground (pin 6); an HC-SR04 sensor with VCC on 5 V (pin 2), TRIG on GPIO23 (pin 16), ECHO through a 1 kilohm resistor to GPIO24 (pin 18) with 2 kilohms from GPIO24 to ground, and GND on pin 20.</desc>
+<rect x="0" y="0" width="960" height="700" rx="16" fill="#FFFFFF"/>
+<text x="40" y="50" font-size="22" font-weight="700" fill="#1D1D1F" text-anchor="start">Wiring for all four demos</text>
+<text x="40" y="74" font-size="13" font-weight="400" fill="#5F6368" text-anchor="start">Wire with the Pi powered off. “Pin” is the physical pin on the 40-pin header; the code uses the GPIO number.</text>
+<circle cx="690" cy="45" r="6" fill="#E8702A"/>
+<text x="702" y="50" font-size="12.5" font-weight="400" fill="#1D1D1F" text-anchor="start">GPIO signal</text>
+<circle cx="810" cy="45" r="6" fill="#D93B3B"/>
+<text x="822" y="50" font-size="12.5" font-weight="400" fill="#1D1D1F" text-anchor="start">5 V</text>
+<circle cx="870" cy="45" r="6" fill="#2B2B2B"/>
+<text x="882" y="50" font-size="12.5" font-weight="400" fill="#1D1D1F" text-anchor="start">GND</text>
+<text x="40" y="108" font-size="11.5" font-weight="700" fill="#E8702A" text-anchor="start" letter-spacing="1.2">LED · STEPS 1, 2 AND 4</text>
+<rect x="40" y="115" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="115" width="6" height="34" rx="3" fill="#E8702A"/>
+<text x="58" y="137" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 11</tspan><tspan dx="6" fill="#5F6368">· GPIO17</tspan></text>
+<circle cx="240" cy="132" r="5" fill="#E8702A"/>
+<rect x="40" y="165" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="165" width="6" height="34" rx="3" fill="#2B2B2B"/>
+<text x="58" y="187" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 9</tspan><tspan dx="6" fill="#5F6368">· GND</tspan></text>
+<circle cx="240" cy="182" r="5" fill="#2B2B2B"/>
+<polyline points="240,132 330,132" fill="none" stroke="#E8702A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="330,132 336.6666666666667,124 350.0,140 363.3333333333333,124 376.6666666666667,140 390.0,124 403.33333333333337,140 410,132" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="370.0" y="116" font-size="12.5" font-weight="600" fill="#1D1D1F" text-anchor="middle">330 Ω</text>
+<polyline points="410,132 470,132" fill="none" stroke="#E8702A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="470,120 470,144 498,132" fill="#E8702A"/>
+<polyline points="498,120 498,144" fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="482,116 493,102" fill="none" stroke="#E8702A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="493,102 492.0,108.9 486.5,104.6" fill="#E8702A"/>
+<polyline points="492,116 503,102" fill="none" stroke="#E8702A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="503,102 502.0,108.9 496.5,104.6" fill="#E8702A"/>
+<text x="462" y="116" font-size="13" font-weight="700" fill="#5F6368" text-anchor="middle">+</text>
+<text x="512" y="116" font-size="13" font-weight="700" fill="#5F6368" text-anchor="middle">−</text>
+<polyline points="498,132 560,132 560,182 240,182" fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="137" font-size="12.5" font-weight="400" fill="#5F6368" text-anchor="start">LED: long leg (+) to the resistor,</text>
+<text x="600" y="155" font-size="12.5" font-weight="400" fill="#5F6368" text-anchor="start">short leg (−) to GND</text>
+<text x="40" y="240" font-size="11.5" font-weight="700" fill="#E8702A" text-anchor="start" letter-spacing="1.2">BUTTON · STEP 2</text>
+<rect x="40" y="247" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="247" width="6" height="34" rx="3" fill="#E8702A"/>
+<text x="58" y="269" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 3</tspan><tspan dx="6" fill="#5F6368">· GPIO2</tspan></text>
+<circle cx="240" cy="264" r="5" fill="#E8702A"/>
+<rect x="40" y="297" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="297" width="6" height="34" rx="3" fill="#2B2B2B"/>
+<text x="58" y="319" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 6</tspan><tspan dx="6" fill="#5F6368">· GND</tspan></text>
+<circle cx="240" cy="314" r="5" fill="#2B2B2B"/>
+<polyline points="240,264 446,264" fill="none" stroke="#E8702A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="450" cy="264" r="4" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.5"/>
+<circle cx="490" cy="264" r="4" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.5"/>
+<polyline points="442,252 498,252" fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="470,252 470,240" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="462,240 478,240" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="494,264 560,264 560,314 240,314" fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="269" font-size="12.5" font-weight="400" fill="#5F6368" text-anchor="start">Push button: no resistor needed,</text>
+<text x="600" y="287" font-size="12.5" font-weight="400" fill="#5F6368" text-anchor="start">gpiozero turns on the pin's pull-up</text>
+<text x="40" y="372" font-size="11.5" font-weight="700" fill="#E8702A" text-anchor="start" letter-spacing="1.2">DISTANCE SENSOR · STEP 3</text>
+<rect x="40" y="379" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="379" width="6" height="34" rx="3" fill="#D93B3B"/>
+<text x="58" y="401" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 2</tspan><tspan dx="6" fill="#5F6368">· 5 V</tspan></text>
+<circle cx="240" cy="396" r="5" fill="#D93B3B"/>
+<rect x="40" y="429" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="429" width="6" height="34" rx="3" fill="#E8702A"/>
+<text x="58" y="451" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 16</tspan><tspan dx="6" fill="#5F6368">· GPIO23</tspan></text>
+<circle cx="240" cy="446" r="5" fill="#E8702A"/>
+<rect x="40" y="479" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="479" width="6" height="34" rx="3" fill="#E8702A"/>
+<text x="58" y="501" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 18</tspan><tspan dx="6" fill="#5F6368">· GPIO24</tspan></text>
+<circle cx="240" cy="496" r="5" fill="#E8702A"/>
+<rect x="40" y="529" width="200" height="34" rx="8" fill="#F5F5F7"/>
+<rect x="40" y="529" width="6" height="34" rx="3" fill="#2B2B2B"/>
+<text x="58" y="551" font-size="14" fill="#1D1D1F"><tspan font-weight="700">Pin 20</tspan><tspan dx="6" fill="#5F6368">· GND</tspan></text>
+<circle cx="240" cy="546" r="5" fill="#2B2B2B"/>
+<rect x="760" y="370" width="160" height="202" rx="12" fill="#EEF4FA" stroke="#3B6EA5" stroke-width="2"/>
+<text x="774" y="401" font-size="13" font-weight="700" fill="#3B6EA5" text-anchor="start">VCC</text>
+<text x="774" y="451" font-size="13" font-weight="700" fill="#3B6EA5" text-anchor="start">TRIG</text>
+<text x="774" y="501" font-size="13" font-weight="700" fill="#3B6EA5" text-anchor="start">ECHO</text>
+<text x="774" y="551" font-size="13" font-weight="700" fill="#3B6EA5" text-anchor="start">GND</text>
+<text x="870" y="462" font-size="15" font-weight="700" fill="#1D1D1F" text-anchor="middle">HC-SR04</text>
+<text x="870" y="482" font-size="12" font-weight="400" fill="#5F6368" text-anchor="middle">ultrasonic</text>
+<text x="870" y="498" font-size="12" font-weight="400" fill="#5F6368" text-anchor="middle">sensor</text>
+<polyline points="240,396 760,396" fill="none" stroke="#D93B3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="240,446 760,446" fill="none" stroke="#E8702A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="760,496 720,496" fill="none" stroke="#D93B3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="640,496 646.6666666666666,488 660.0,504 673.3333333333334,488 686.6666666666666,504 700.0,488 713.3333333333334,504 720,496" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="680.0" y="480" font-size="12.5" font-weight="600" fill="#1D1D1F" text-anchor="middle">1 kΩ</text>
+<polyline points="640,496 600,496 240,496" fill="none" stroke="#E8702A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="600,496 600,504" fill="none" stroke="#E8702A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="600,504 592,506.8333333333333 608,512.5 592,518.1666666666666 608,523.8333333333334 592,529.5 608,535.1666666666666 600,538" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="616" y="525.0" font-size="12.5" font-weight="600" fill="#1D1D1F" text-anchor="start">2 kΩ</text>
+<polyline points="600,538 600,546" fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="760,546 240,546" fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="600" cy="496" r="5.5" fill="#E8702A"/>
+<circle cx="600" cy="546" r="5.5" fill="#2B2B2B"/>
+<text x="728" y="484" font-size="11.5" font-weight="700" fill="#D93B3B" text-anchor="end">5 V</text>
+<text x="590" y="484" font-size="11.5" font-weight="700" fill="#E8702A" text-anchor="end">≈ 3.3 V</text>
+<text x="40" y="590" font-size="12.5" font-weight="400" fill="#5F6368" text-anchor="start">The 1 kΩ / 2 kΩ divider brings the 5 V ECHO signal down to about 3.3 V. Never connect ECHO straight to a GPIO pin.</text>
+<text x="40" y="640" font-size="13" font-weight="700" fill="#1D1D1F" text-anchor="start">40-pin header</text>
+<text x="40" y="658" font-size="12" font-weight="400" fill="#5F6368" text-anchor="start">pins used here</text>
+<text x="40" y="676" font-size="12" fill="#5F6368">(run <tspan font-family="Menlo, Consolas, monospace" fill="#1D1D1F">pinout</tspan> on the Pi)</text>
+<circle cx="250" cy="638" r="10" fill="#D93B3B"/>
+<text x="250" y="641.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="250" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="250" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">1</text>
+<circle cx="274" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="274" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">4</text>
+<circle cx="274" cy="664" r="10" fill="#E8702A"/>
+<text x="274" y="667.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="298" cy="638" r="10" fill="#2B2B2B"/>
+<text x="298" y="641.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<circle cx="298" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="298" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">5</text>
+<circle cx="322" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="322" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">8</text>
+<circle cx="322" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="322" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">7</text>
+<circle cx="346" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="346" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">10</text>
+<circle cx="346" cy="664" r="10" fill="#2B2B2B"/>
+<text x="346" y="667.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">9</text>
+<circle cx="370" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="370" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">12</text>
+<circle cx="370" cy="664" r="10" fill="#E8702A"/>
+<text x="370" y="667.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">11</text>
+<circle cx="394" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="394" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">14</text>
+<circle cx="394" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="394" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">13</text>
+<circle cx="418" cy="638" r="10" fill="#E8702A"/>
+<text x="418" y="641.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">16</text>
+<circle cx="418" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="418" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">15</text>
+<circle cx="442" cy="638" r="10" fill="#E8702A"/>
+<text x="442" y="641.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">18</text>
+<circle cx="442" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="442" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">17</text>
+<circle cx="466" cy="638" r="10" fill="#2B2B2B"/>
+<text x="466" y="641.5" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">20</text>
+<circle cx="466" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="466" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">19</text>
+<circle cx="490" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="490" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">22</text>
+<circle cx="490" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="490" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">21</text>
+<circle cx="514" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="514" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">24</text>
+<circle cx="514" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="514" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">23</text>
+<circle cx="538" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="538" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">26</text>
+<circle cx="538" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="538" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">25</text>
+<circle cx="562" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="562" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">28</text>
+<circle cx="562" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="562" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">27</text>
+<circle cx="586" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="586" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">30</text>
+<circle cx="586" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="586" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">29</text>
+<circle cx="610" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="610" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">32</text>
+<circle cx="610" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="610" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">31</text>
+<circle cx="634" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="634" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">34</text>
+<circle cx="634" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="634" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">33</text>
+<circle cx="658" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="658" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">36</text>
+<circle cx="658" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="658" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">35</text>
+<circle cx="682" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="682" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">38</text>
+<circle cx="682" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="682" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">37</text>
+<circle cx="706" cy="638" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="706" y="641.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">40</text>
+<circle cx="706" cy="664" r="10" fill="#FFFFFF" stroke="#C9CCD1" stroke-width="1.5"/>
+<text x="706" y="667.5" font-size="8" font-weight="400" fill="#9AA0A6" text-anchor="middle">39</text>
+</svg>
